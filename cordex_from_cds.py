@@ -12,7 +12,7 @@ def download(origin, experiment, variable, area, cwd=None):
         Historical, RCP_2_6, RCP_4_5 or RCP_8_5
     variable: str
         Climate data variable to download. Only one can be downloaded at a time. Find names below.
-    subarea: list
+    subarea: list of int
         [N,W,S,E] borders of a rectangular area to download data for
     cwd: str
         current working directory, i.e. where data is supposed to be stored
@@ -54,6 +54,8 @@ def download(origin, experiment, variable, area, cwd=None):
         period = "1970-2005"
     elif experiment == "rcp_2_6" or experiment == "rcp_4_5" or experiment == "rcp_8_5":
         period = "2006-2100"
+
+    #  Check for correct spelling of the input variables and legal year range and area
 
     if variable  in variables\
         and experiment in experiments\
