@@ -109,8 +109,8 @@ def download(product_type = "monthly_averaged_reanalysis" ,variable=None, year_s
                       ' or was misspelled. Please check.')
 
 variable = ['2m_temperature']
-year_start = 1990
-year_finish = 2000
+year_start= 1990
+yearsfinish = 2000
 product_type = "monthly_averaged_reanalysis"
 area = [49, 8, 47, 10]
 download(product_type, variable, year_start, year_finish, area)

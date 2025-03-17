@@ -6,6 +6,9 @@ import cdsapi
 def download(origin, experiment, variable, area, cwd=None):
     """
     Downloads data from the CDS API for the EURO-CORDEX/CORDEX-CORE project
+    https://cds.climate.copernicus.eu/datasets/multi-origin-c3s-atlas?tab=overview
+
+
     origin: str
         Which dataset to download from. Either CORDEX-CORE or EURO-CORDEX
     experiment: str
